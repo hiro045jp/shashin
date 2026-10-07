@@ -102,7 +102,7 @@ modeNav.hidden=true;
 labelOf('layout').hidden=true;
 const renderGridCommands=render;
 render=function(){renderGridCommands();if(window.appHasExited)return;$('gridControls').hidden=false;$('layout').value=isGrid()?'grid':'free';$('arrangeGrid').hidden=!isGrid();};
-const sizePreviewCommand=()=>{const card=(mode==='collage'?collage:split).querySelector('.grid-group');const width=card.getBoundingClientRect().width;if(width)quickPreview.style.width=width+'px';};
+const sizePreviewCommand=()=>{const card=(mode==='collage'?collage:split).querySelector('.grid-group');const width=card?.getBoundingClientRect().width;if(width)quickPreview.style.width=width+'px';};
 new ResizeObserver(sizePreviewCommand).observe(oldAside);
 document.querySelectorAll('[data-mode]').forEach(button=>button.addEventListener('click',()=>requestAnimationFrame(sizePreviewCommand)));
 render();

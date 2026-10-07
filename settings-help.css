@@ -2,3 +2,4 @@
 .layout-explanation{margin:0 0 8px}#tileResults.review{background:#000;border-color:#333}#tileResults .tile{background:#141414;border:2px solid #ffc225;border-radius:8px}#tileResults .preview-photo-viewport{background:#000}
 .layout-explanation{white-space:pre-line}
 #empty{pointer-events:auto}#emptyPhotoSelect{padding:16px 28px;font-size:15px;border-color:#9b7419;color:#ffd259;background:#302711}#emptyPhotoSelect:hover{background:#493912}#empty .empty-drop-instruction{margin:18px 0 0;font-size:13px;color:#bbb}
+header .header-actions{display:none}header .brand span{font-size:19.5px}@media(max-width:800px){header .brand span{font-size:16.5px}}@media(max-width:650px){header .brand span{font-size:18px}}
